@@ -44,12 +44,14 @@
         </mat-chip-list>
       </td>
       <td>{{ user.joinedDateAt }}</td>
-      <td class="data-center">
-        <button mat-button (click)="editUser(user?.id!)"><i class="fas fa-pen"></i></button>
-        <!-- <button mat-button (click)="user?.id !== undefined && openDeleteConfirmationDialog(user.id)">>
-          <i class="fas fa-pen"></i>
-        </button> -->
-        <button mat-button (click)="deleteUser(user?.id!)"><i class="fas fa-trash"></i></button>
+      <td>
+        <div class="data-center">
+          <button mat-button (click)="editUser(user?.id!)"><i class="fas fa-pen"></i></button>
+          <!-- <button mat-button (click)="user?.id !== undefined && openDeleteConfirmationDialog(user.id)">>
+            <i class="fas fa-pen"></i>
+          </button> -->
+          <button mat-button (click)="deleteUser(user?.id!)"><i class="fas fa-trash"></i></button>
+        </div>
       </td>
     </tr>
   </tbody>
