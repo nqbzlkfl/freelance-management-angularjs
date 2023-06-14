@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { User } from '../../../data/model/user.model';
 import { UserService } from '../../../data/service/user.service';
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-home',
@@ -19,7 +20,12 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.userService.getUsers().subscribe(
       users => {
-        this.users = users;
+        this.users = users.map(user => {
+          return {
+            ...user,
+            joinedDateAt: moment(user.createdAt).format('DD/MM/YYYY')
+          };
+        });
       },
       error => console.log(error)
     );
