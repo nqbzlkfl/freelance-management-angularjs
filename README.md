@@ -12,19 +12,28 @@ Complete Developer Network is an Angular project that allows administrators to m
 
 ## Screenshots
 
+### Login Page - User List
+![Login Page](screenshots/login.png)
+
 ### Home Page - User List
 ![Home Page - User List](screenshots/home-user-list.png)
 
 ### Add User
+![Add User](screenshots/add-user-button.png)
 ![Add User](screenshots/add-user.png)
 
 ### Update User
+![Update User](screenshots/update-user-button.png)
 ![Update User](screenshots/update-user.png)
 
 ### Delete User
 ![Delete User](screenshots/delete-user.png)
 
-## Angular Part
+## Try Demo Here
+
+Try the demo of Complete Developer Network by [click here](https://main.detx46npjhzrs.amplifyapp.com/).
+
+# Angular Part
 ## Getting Started
 
 To run this project locally, follow the steps below:
@@ -34,7 +43,7 @@ To run this project locally, follow the steps below:
 ```shell
 git clone https://github.com/your-username/complete-developer-network.git
 
-# UserManagement
+# freelance-management-angularjs
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
 
