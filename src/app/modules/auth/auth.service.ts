@@ -11,7 +11,7 @@ export class AuthService {
 
   login(username: string, password: string): Observable<boolean> {
     // Perform authentication logic here, e.g., checking against a hardcoded account
-    if (username === 'user-test' && password === 'password') {
+    if (username === 'admin' && password === 'password') {
       this.isAuthenticated = true;
       return of(true);
     } else {

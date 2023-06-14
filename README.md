@@ -20,14 +20,16 @@ Complete Developer Network is an Angular project that allows administrators to m
 
 ### Add User
 ![Add User](screenshots/add-user-button.png)
-![Add User](screenshots/add-user.png)
+![Add User](screenshots/create-user.png)
 
 ### Update User
-![Update User](screenshots/update-user-button.png)
-![Update User](screenshots/update-user.png)
+![Update User](screenshots/edit-user-button.png)
+![Update User](screenshots/edit-user.png)
 
 ### Delete User
 ![Delete User](screenshots/delete-user.png)
+
+#### Credential for login is `username: admin` and `password: password`
 
 ## Try Demo Here
 
