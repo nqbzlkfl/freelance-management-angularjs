@@ -1,0 +1,14 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  height: 20px;
+  align-items: center;
+  padding: 20px;
+  width: screen;
+}
+
+header .nav {
+  color: #ffd740;
+  cursor: pointer;
+}

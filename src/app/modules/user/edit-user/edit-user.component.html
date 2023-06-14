@@ -1,0 +1,53 @@
+<div class="main">
+  <div class="container">
+    <div class="top-form">
+      <button (click)="navigateToHome()">Back</button>
+      <h2>Edit User</h2>
+    </div>
+    <form class="vertical-form">
+      <div class="form-field">
+        <mat-form-field appearance="outline">
+          <mat-label>Name:</mat-label>
+          <input matInput type="text" [(ngModel)]="user.name" name="name">
+        </mat-form-field>
+      </div>
+
+      <div class="form-field">
+        <mat-form-field appearance="outline">
+          <mat-label>Username:</mat-label>
+          <input matInput type="text" [(ngModel)]="user.username" name="username">
+        </mat-form-field>
+      </div>
+
+      <div class="form-field">
+        <mat-form-field appearance="outline">
+          <mat-label>Email:</mat-label>
+          <input matInput type="text" [(ngModel)]="user.email" name="email">
+        </mat-form-field>
+      </div>
+
+      <div class="form-field">
+        <mat-form-field appearance="outline">
+          <mat-label>Phone Number:</mat-label>
+          <input matInput type="text" [(ngModel)]="user.phone_number" name="phone_number">
+        </mat-form-field>
+      </div>
+
+      <div class="form-field">
+        <mat-form-field appearance="outline">
+          <mat-label>Skill Set:</mat-label>
+          <input matInput type="text" [(ngModel)]="user.skill_set" name="skill_set">
+        </mat-form-field>
+      </div>
+
+      <div class="form-field">
+        <mat-form-field appearance="outline">
+          <mat-label>Hobby:</mat-label>
+          <input matInput type="text" [(ngModel)]="user.hobby" name="hobby">
+        </mat-form-field>
+      </div>
+
+      <button (click)="updateUser()">Update</button>
+    </form>
+  </div>
+</div>

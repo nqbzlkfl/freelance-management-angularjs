@@ -1,0 +1,86 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: transparent;
+  font-size: 15px;
+}
+
+th, td {
+  border: none;
+  border-bottom: 1px solid #949494;
+  padding: 8px;
+  text-align: left;
+  color: rgb(237, 237, 237);
+}
+
+th {
+  border-bottom-width: 2px;
+  color: rgb(237, 237, 237);
+  background-color: #383838;
+  padding-block: 5px;
+}
+
+td { 
+  background-color: #464646;
+}
+
+h2 {
+  color: rgb(237, 237, 237);
+}
+
+.header-center {
+  text-align: center;
+}
+
+.data-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  color: rgb(63, 63, 63) !important;
+  font-size: 12px;
+}
+
+.container-header {
+  display: flex;
+  padding-inline: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-button {
+  display: inline-block;
+  padding: 2px 24px;
+  background-color: #ffd740;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: rgb(231, 224, 168);
+}
+
+.add-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.3);
+}
+
+.add-button:active {
+  background-color: #0d47a1;
+}
+
+.fa-trash {
+  color: rgb(250, 80, 80);
+}
+
+.fa-pen {
+  color: lightyellow;
+}

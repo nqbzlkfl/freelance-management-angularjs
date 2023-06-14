@@ -1,0 +1,54 @@
+<div class="container-header">
+  <h2>User List</h2>
+  <button class="add-button" mat-button (click)="navigateToCreateUser()">Add User</button>
+</div>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Username</th>
+      <th>Email</th>
+      <th>Phone Number</th>
+      <th>Skill Set</th>
+      <th>Hobby</th>
+      <th class="header-center">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.name }}</td>
+      <td>{{ user.username }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.phone_number }}</td>
+      <td>
+        <mat-chip-list *ngIf="user.skill_set">
+          <mat-chip 
+            class="text"
+            *ngFor="let skill of user.skill_set.split(',')"
+            [ngStyle]="{ 'background-color': getRandomColor() }"
+          >
+            {{ skill }}
+          </mat-chip>
+        </mat-chip-list>
+      </td>
+      <td>
+        <mat-chip-list *ngIf="user.hobby">
+          <mat-chip 
+            class="text"
+            *ngFor="let hobby of user.hobby.split(',')"
+            [ngStyle]="{ 'background-color': getRandomColor() }"
+          >
+            {{ hobby }}
+          </mat-chip>
+        </mat-chip-list>
+      </td>
+      <td class="data-center">
+        <button mat-button (click)="editUser(user?.id!)"><i class="fas fa-pen"></i></button>
+        <!-- <button mat-button (click)="user?.id !== undefined && openDeleteConfirmationDialog(user.id)">>
+          <i class="fas fa-pen"></i>
+        </button> -->
+        <button mat-button (click)="deleteUser(user?.id!)"><i class="fas fa-trash"></i></button>
+      </td>
+    </tr>
+  </tbody>
+</table>
