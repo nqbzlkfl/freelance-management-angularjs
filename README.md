@@ -1,3 +1,39 @@
+# Complete Developer Network
+
+Complete Developer Network is an Angular project that allows administrators to manage freelance users. The project provides features for user login, displaying a user list, adding users, updating user information, and deleting users.
+
+## Features
+
+- **User Login**: Administrators can log in to the system using their credentials.
+- **User List**: After logging in, the system redirects administrators to the home page where they can view a list of freelance users.
+- **Add User**: Administrators can add new freelance users by providing the necessary details such as name, email, and skills.
+- **Update User**: Administrators can update user information such as name, email, and skills for existing freelance users.
+- **Delete User**: Administrators can delete freelance users from the system.
+
+## Screenshots
+
+### Home Page - User List
+![Home Page - User List](screenshots/home-user-list.png)
+
+### Add User
+![Add User](screenshots/add-user.png)
+
+### Update User
+![Update User](screenshots/update-user.png)
+
+### Delete User
+![Delete User](screenshots/delete-user.png)
+
+## Angular Part
+## Getting Started
+
+To run this project locally, follow the steps below:
+
+1. Clone the repository:
+
+```shell
+git clone https://github.com/your-username/complete-developer-network.git
+
 # UserManagement
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
@@ -13,14 +49,6 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
 ## Further help
 
